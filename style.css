@@ -29,9 +29,6 @@ body {
 }
 .container img {
   width: 80px;
-  filter: grayscale(50%);
-  filter: brightness(0);
-  text-align: center;
 }
 .container h2 {
   text-align: center;

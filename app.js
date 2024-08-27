@@ -29,3 +29,14 @@ button.addEventListener("click", async () => {
     result.innerText = `Converted Amount = ${convertedAmount} ${toCurrency}`;
   }
 });
+
+const exchangeIcon = document.getElementById("exchange-icon");
+
+exchangeIcon.addEventListener("click", () => {
+  const fromCurrency = document.getElementById("fromCurrency");
+  const toCurrency = document.getElementById("toCurrency");
+
+  let temp = fromCurrency.value;
+  fromCurrency.value = toCurrency.value;
+  toCurrency.value = temp;
+});
